@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:wght@200&family=Rubik:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    height: 75px;
+
+}
+nav img{
+
+    right: 47%;
+    top: 16%;
+    position: absolute;
+}
+
+
+.hero{
+    height: 540px;
+    width: 100%;
+    background-color: #ff4e00;
+background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+}
+.hero img{
+    float: right;
+    margin-right: 100px;
+}
+.hero h1{
+    font-size: 25px;
+    padding-top: 100px;
+    margin-left: 200px;
+
+}
+.questions{
+    text-align: center;
+    font-size: 40px;    
+    font-weight: bold;
+    font-family: 'Montagu Slab', serif;
+    text-shadow:2px 2px 3px rgba(255, 166, 0, 0.785);
+
+
+
+}
+
+.ourCards {
+    display: flex;
+    margin: 0 70px;
+}
+
+.custom_card {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius:2rem;
+    color: white;
+    cursor: pointer;
+    width: 4%;
+    margin: 1rem;
+    transition: width 0.3s;
+    filter: brightness(0.5);
+}
+
+.custom_card h3 {
+    font-size: 2.5rem;
+    align-self: flex-end;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.custom_card.active {
+    width: 96%;
+    filter: brightness(1);
+    }
+
+.custom_card.active h3 {
+    opacity: 1;
+}
+
+.footerText{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 500px;
+}
+.dropup{
+    float: right;
+    margin-top: 25px;
+
+}
+.footerText.container.d-flex.justify-content-center.py-2{
+    margin-left: 445px;
+}
+
+
+.teamButton{
+    margin-right: 85px;
+}
+
+.dropup button{
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 30%, #fbd72b 90%);
+    border:none;    
+}
